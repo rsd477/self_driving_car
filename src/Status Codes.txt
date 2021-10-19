@@ -1,0 +1,52 @@
+Status Codes from Arduino
+
+0x - Distance
+Values:
+"int" - cm
+
+1x - Distance Ratio
+0 - Vary Far
+1 - < 80cm
+2 - < 60cm
+3 - < 30cm
+
+2x - Water Level
+0 - good
+1 - medium
+2 - low
+
+3x - Temperature in C
+Values:
+"int" - celcius
+
+4x - Temperature alarm
+0 - okay
+1 - critical ( > 27C )
+
+5x - Speed Percentage
+Values:
+"int" - numbers 0 to 100 in increments of 10
+
+6x - Headlights
+0 - off
+1 - dim
+2 - high
+
+
+GUI Status
+
+Distance:
+black - > 80cm
+green - < 80cm
+yellow - less than 60cm
+red - less than 30cm
+white - error
+
+Coolant:
+red - critically low, shutdown.
+yellow - fill soon
+green - good
+
+Temperature:
+Red - dangerously hot, shutdown
+Green - functioning nomally, OK
